@@ -1,0 +1,10 @@
+debug/landingpage.o
+debug/main.o
+debug/mainwindow.o
+debug/registration.o
+debug/updateaccount.o
+debug/qrc_Resorc.o
+debug/moc_landingpage.o
+debug/moc_mainwindow.o
+debug/moc_registration.o
+debug/moc_updateaccount.o

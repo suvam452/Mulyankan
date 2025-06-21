@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/resource"/>
+    <qresource prefix="/image">
+        <file>img/ChatGPT Image Jun 11, 2025, 05_45_04 PM.png</file>
+        <file>img/logo1.png</file>
+    </qresource>
+</RCC>

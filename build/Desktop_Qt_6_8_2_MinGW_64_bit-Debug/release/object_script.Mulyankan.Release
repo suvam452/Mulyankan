@@ -1,0 +1,10 @@
+release/landingpage.o
+release/main.o
+release/mainwindow.o
+release/registration.o
+release/updateaccount.o
+release/qrc_Resorc.o
+release/moc_landingpage.o
+release/moc_mainwindow.o
+release/moc_registration.o
+release/moc_updateaccount.o
