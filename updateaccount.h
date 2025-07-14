@@ -15,6 +15,11 @@ public:
     explicit updateaccount(QWidget *parent = nullptr);
     ~updateaccount();
 
+private slots:
+    void on_pushButton_update_clicked();
+
+    void on_pushButton_home_clicked();
+
 private:
     Ui::updateaccount *ui;
 };

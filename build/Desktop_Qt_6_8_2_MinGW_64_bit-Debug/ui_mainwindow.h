@@ -36,12 +36,13 @@ public:
     QLabel *label;
     QLabel *label_2;
     QVBoxLayout *verticalLayout_5;
-    QLineEdit *lineEdit_username;
+    QLineEdit *lineEdit_emailid;
     QLineEdit *lineEdit_password;
     QCheckBox *checkBox_terms;
     QPushButton *pushButton_login;
     QPushButton *pushButton_register;
     QLabel *label_pic;
+    QLabel *label_status2;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -96,9 +97,9 @@ public:
 
         verticalLayout_5 = new QVBoxLayout();
         verticalLayout_5->setObjectName("verticalLayout_5");
-        lineEdit_username = new QLineEdit(groupBox);
-        lineEdit_username->setObjectName("lineEdit_username");
-        lineEdit_username->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+        lineEdit_emailid = new QLineEdit(groupBox);
+        lineEdit_emailid->setObjectName("lineEdit_emailid");
+        lineEdit_emailid->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
 "    border: 2px solid rgb(16, 16, 16);\n"
 "    border-radius: 10px; \n"
 "    background-color: rgb(255, 255, 255,0);\n"
@@ -109,7 +110,7 @@ public:
 "}\n"
 ""));
 
-        verticalLayout_5->addWidget(lineEdit_username);
+        verticalLayout_5->addWidget(lineEdit_emailid);
 
         lineEdit_password = new QLineEdit(groupBox);
         lineEdit_password->setObjectName("lineEdit_password");
@@ -180,6 +181,13 @@ public:
         label_pic->setObjectName("label_pic");
         label_pic->setGeometry(QRect(270, 10, 171, 121));
         label_pic->setAlignment(Qt::AlignmentFlag::AlignCenter);
+        label_status2 = new QLabel(centralwidget);
+        label_status2->setObjectName("label_status2");
+        label_status2->setGeometry(QRect(100, 420, 431, 31));
+        QFont font1;
+        font1.setPointSize(10);
+        font1.setBold(true);
+        label_status2->setFont(font1);
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -197,6 +205,7 @@ public:
         pushButton_login->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
         pushButton_register->setText(QCoreApplication::translate("MainWindow", "Not a user? Register", nullptr));
         label_pic->setText(QString());
+        label_status2->setText(QCoreApplication::translate("MainWindow", "[+]Status ", nullptr));
     } // retranslateUi
 
 };

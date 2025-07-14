@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>623</width>
-    <height>430</height>
+    <width>698</width>
+    <height>496</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -22,8 +22,8 @@
      <rect>
       <x>120</x>
       <y>40</y>
-      <width>401</width>
-      <height>311</height>
+      <width>451</width>
+      <height>391</height>
      </rect>
     </property>
     <property name="font">
@@ -125,6 +125,32 @@
              </property>
             </widget>
            </item>
+           <item>
+            <widget class="QLabel" name="label_6">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Grade</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_7">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Reg No.</string>
+             </property>
+            </widget>
+           </item>
           </layout>
          </item>
          <item>
@@ -193,6 +219,78 @@
              </property>
             </widget>
            </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_grade">
+             <property name="styleSheet">
+              <string notr="true">QComboBox{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>1st Sem</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2nd Sem</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>3rd Sem</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4th Sem</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>5th Sem</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>6th Sem</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>7th Sem</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>8th Sem</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_regno">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color: rgb(255, 255, 255,0);
+    min-width: 8px; 
+    min-height: 8px;
+    padding: 5px;
+    margin: 0px;
+}
+</string>
+             </property>
+            </widget>
+           </item>
           </layout>
          </item>
         </layout>
@@ -218,18 +316,13 @@
          </item>
          <item>
           <property name="text">
-           <string>Faculty Member</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
            <string>Teacher</string>
           </property>
          </item>
         </widget>
        </item>
        <item>
-        <widget class="QCheckBox" name="checkBox">
+        <widget class="QCheckBox" name="checkBox_reg">
          <property name="text">
           <string>I agree to terms and conditions</string>
          </property>
@@ -239,7 +332,7 @@
         <widget class="QPushButton" name="pushButton_register">
          <property name="font">
           <font>
-           <pointsize>11</pointsize>
+           <pointsize>10</pointsize>
            <bold>true</bold>
           </font>
          </property>
@@ -266,7 +359,7 @@
           <widget class="QPushButton" name="pushButton_loginpage">
            <property name="font">
             <font>
-             <pointsize>11</pointsize>
+             <pointsize>10</pointsize>
              <bold>true</bold>
             </font>
            </property>
@@ -292,6 +385,25 @@
       </layout>
      </item>
     </layout>
+   </widget>
+   <widget class="QLabel" name="label_status2">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>450</y>
+      <width>341</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>[+]Status </string>
+    </property>
    </widget>
   </widget>
  </widget>

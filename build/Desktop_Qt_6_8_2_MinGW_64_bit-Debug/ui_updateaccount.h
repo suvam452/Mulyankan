@@ -36,14 +36,17 @@ public:
     QLabel *label_2;
     QLabel *label_3;
     QLabel *label_4;
+    QLabel *label_6;
+    QLabel *label_7;
     QVBoxLayout *verticalLayout_2;
     QLineEdit *lineEdit_updtname;
     QLineEdit *lineEdit_updtphone;
     QLineEdit *lineEdit_updtemail;
     QLineEdit *lineEdit_updtpassword;
+    QLineEdit *lineEdit_updtgrade;
+    QLineEdit *lineEdit_updtregno;
     QPushButton *pushButton_update;
-    QVBoxLayout *verticalLayout_3;
-    QPushButton *pushButton_deleteacc;
+    QPushButton *pushButton_home;
 
     void setupUi(QMainWindow *updateaccount)
     {
@@ -76,7 +79,9 @@ public:
         verticalLayout_4->setObjectName("verticalLayout_4");
         label_5 = new QLabel(groupBox);
         label_5->setObjectName("label_5");
-        label_5->setFont(font);
+        QFont font1;
+        font1.setBold(true);
+        label_5->setFont(font1);
         label_5->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         verticalLayout_4->addWidget(label_5);
@@ -108,6 +113,18 @@ public:
         label_4->setFont(font);
 
         verticalLayout->addWidget(label_4);
+
+        label_6 = new QLabel(groupBox);
+        label_6->setObjectName("label_6");
+        label_6->setFont(font);
+
+        verticalLayout->addWidget(label_6);
+
+        label_7 = new QLabel(groupBox);
+        label_7->setObjectName("label_7");
+        label_7->setFont(font);
+
+        verticalLayout->addWidget(label_7);
 
 
         horizontalLayout->addLayout(verticalLayout);
@@ -174,6 +191,36 @@ public:
 
         verticalLayout_2->addWidget(lineEdit_updtpassword);
 
+        lineEdit_updtgrade = new QLineEdit(groupBox);
+        lineEdit_updtgrade->setObjectName("lineEdit_updtgrade");
+        lineEdit_updtgrade->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"    border: 2px solid rgb(16, 16, 16);\n"
+"    border-radius: 10px; \n"
+"    background-color: rgb(255, 255, 255,0);\n"
+"    min-width: 8px; \n"
+"    min-height: 8px;\n"
+"    padding: 5px;\n"
+"    margin: 0px;\n"
+"}\n"
+""));
+
+        verticalLayout_2->addWidget(lineEdit_updtgrade);
+
+        lineEdit_updtregno = new QLineEdit(groupBox);
+        lineEdit_updtregno->setObjectName("lineEdit_updtregno");
+        lineEdit_updtregno->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"    border: 2px solid rgb(16, 16, 16);\n"
+"    border-radius: 10px; \n"
+"    background-color: rgb(255, 255, 255,0);\n"
+"    min-width: 8px; \n"
+"    min-height: 8px;\n"
+"    padding: 5px;\n"
+"    margin: 0px;\n"
+"}\n"
+""));
+
+        verticalLayout_2->addWidget(lineEdit_updtregno);
+
 
         horizontalLayout->addLayout(verticalLayout_2);
 
@@ -196,12 +243,13 @@ public:
 
         verticalLayout_4->addWidget(pushButton_update);
 
-        verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setObjectName("verticalLayout_3");
-        pushButton_deleteacc = new QPushButton(groupBox);
-        pushButton_deleteacc->setObjectName("pushButton_deleteacc");
-        pushButton_deleteacc->setFont(font);
-        pushButton_deleteacc->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+
+        verticalLayout_5->addLayout(verticalLayout_4);
+
+        pushButton_home = new QPushButton(groupBox);
+        pushButton_home->setObjectName("pushButton_home");
+        pushButton_home->setFont(font);
+        pushButton_home->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    border: 2px solid rgb(16, 16, 16);\n"
 "    border-radius: 10px; \n"
 "    background-color:rgb(255, 255, 255,0);\n"
@@ -212,13 +260,7 @@ public:
 "}\n"
 ""));
 
-        verticalLayout_3->addWidget(pushButton_deleteacc);
-
-
-        verticalLayout_4->addLayout(verticalLayout_3);
-
-
-        verticalLayout_5->addLayout(verticalLayout_4);
+        verticalLayout_5->addWidget(pushButton_home);
 
         updateaccount->setCentralWidget(centralwidget);
 
@@ -231,13 +273,15 @@ public:
     {
         updateaccount->setWindowTitle(QCoreApplication::translate("updateaccount", "MainWindow", nullptr));
         groupBox->setTitle(QString());
-        label_5->setText(QCoreApplication::translate("updateaccount", "Update your Account Informaton here", nullptr));
+        label_5->setText(QCoreApplication::translate("updateaccount", "Update your Account information here", nullptr));
         label->setText(QCoreApplication::translate("updateaccount", "Name", nullptr));
         label_2->setText(QCoreApplication::translate("updateaccount", "Phone No.", nullptr));
         label_3->setText(QCoreApplication::translate("updateaccount", "Email ID", nullptr));
         label_4->setText(QCoreApplication::translate("updateaccount", "Password", nullptr));
+        label_6->setText(QCoreApplication::translate("updateaccount", "Grade", nullptr));
+        label_7->setText(QCoreApplication::translate("updateaccount", "Reg No.", nullptr));
         pushButton_update->setText(QCoreApplication::translate("updateaccount", "Update ", nullptr));
-        pushButton_deleteacc->setText(QCoreApplication::translate("updateaccount", "Delete Account", nullptr));
+        pushButton_home->setText(QCoreApplication::translate("updateaccount", "Back to Home", nullptr));
     } // retranslateUi
 
 };
