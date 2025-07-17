@@ -20,6 +20,7 @@ SOURCES += \
     student_info.cpp \
     updateaccount.cpp
 
+
 HEADERS += \
     contactus.h \
     landingpage.h \
@@ -40,7 +41,9 @@ FORMS += \
     score.ui \
     score_teacher.ui \
     student_info.ui \
-    updateaccount.ui
+    updateaccount.ui\
+    zstudentviewattendance.ui\
+    zteacherstudent.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
