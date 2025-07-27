@@ -1,3 +1,6 @@
+debug/assignment.o
+debug/attendance.o
+debug/attendance_teacher.o
 debug/contactus.o
 debug/landingpage.o
 debug/main.o
@@ -7,8 +10,13 @@ debug/registration.o
 debug/score.o
 debug/score_teacher.o
 debug/student_info.o
+debug/task_management.o
+debug/task_view.o
 debug/updateaccount.o
 debug/qrc_Resorc.o
+debug/moc_assignment.o
+debug/moc_attendance.o
+debug/moc_attendance_teacher.o
 debug/moc_contactus.o
 debug/moc_landingpage.o
 debug/moc_mainwindow.o
@@ -17,4 +25,6 @@ debug/moc_registration.o
 debug/moc_score.o
 debug/moc_score_teacher.o
 debug/moc_student_info.o
+debug/moc_task_management.o
+debug/moc_task_view.o
 debug/moc_updateaccount.o

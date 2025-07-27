@@ -7,7 +7,10 @@
 #include"score_teacher.h"
 #include"student_info.h"
 #include<QMessageBox>
-
+#include"attendance_teacher.h"
+#include"attendance.h"
+#include"task_management.h"
+#include"assignment.h"
 landingpage::landingpage(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::landingpage)
@@ -87,5 +90,39 @@ void landingpage::on_pushButton_studentinto_clicked()
 
     }
 
+}
+
+
+void landingpage::on_pushButton_attendance_clicked()
+{
+    if (role.compare("Student", Qt::CaseInsensitive) == 0) {
+
+        hide();
+        attendance *stt= new attendance(this);
+        stt->show();
+
+    }
+    else if (role.compare("Teacher", Qt::CaseInsensitive) == 0) {
+        hide();
+        attendance_teacher *stttt= new attendance_teacher(this);
+        stttt->show();
+
+    }
+}
+
+
+void landingpage::on_pushButton_task_management_clicked()
+{
+    hide();
+    task_management *taskk=new task_management(this);
+taskk->show();
+}
+
+
+void landingpage::on_pushButton_assignment_clicked()
+{
+    hide();
+    assignment *assig= new assignment(this);
+    assig->show();
 }
 

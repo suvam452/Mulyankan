@@ -30,7 +30,7 @@ public:
     QPushButton *pushButton_attendance;
     QPushButton *pushButton_assignment;
     QPushButton *pushButton_scores;
-    QPushButton *pushButton_class_performance;
+    QPushButton *pushButton_task_management;
     QPushButton *pushButton_studentinto;
     QToolBar *toolBar;
 
@@ -108,11 +108,11 @@ public:
 "    margin: 0px; \n"
 "}\n"
 ""));
-        pushButton_class_performance = new QPushButton(centralwidget);
-        pushButton_class_performance->setObjectName("pushButton_class_performance");
-        pushButton_class_performance->setGeometry(QRect(460, 30, 141, 101));
-        pushButton_class_performance->setFont(font);
-        pushButton_class_performance->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+        pushButton_task_management = new QPushButton(centralwidget);
+        pushButton_task_management->setObjectName("pushButton_task_management");
+        pushButton_task_management->setGeometry(QRect(460, 30, 141, 101));
+        pushButton_task_management->setFont(font);
+        pushButton_task_management->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    border: 2px solid rgb(16, 16, 16);\n"
 "    border-radius: 10px; \n"
 "    background-color:rgb(255, 255, 255,0);\n"
@@ -161,8 +161,8 @@ public:
         pushButton_attendance->setText(QCoreApplication::translate("landingpage", "Attendance", nullptr));
         pushButton_assignment->setText(QCoreApplication::translate("landingpage", "Assignments", nullptr));
         pushButton_scores->setText(QCoreApplication::translate("landingpage", "Scores", nullptr));
-        pushButton_class_performance->setText(QCoreApplication::translate("landingpage", "Class \n"
-"Performace", nullptr));
+        pushButton_task_management->setText(QCoreApplication::translate("landingpage", "Task \n"
+"Management ", nullptr));
         pushButton_studentinto->setText(QCoreApplication::translate("landingpage", "View \n"
 "Student Info", nullptr));
         toolBar->setWindowTitle(QCoreApplication::translate("landingpage", "toolBar", nullptr));

@@ -28,6 +28,12 @@ private slots:
 
     void on_pushButton_studentinto_clicked();
 
+    void on_pushButton_attendance_clicked();
+
+    void on_pushButton_task_management_clicked();
+
+    void on_pushButton_assignment_clicked();
+
 private:
     Ui::landingpage *ui;
 };

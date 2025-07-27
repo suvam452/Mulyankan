@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QComboBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
@@ -35,6 +36,7 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QLabel *label_2;
     QLabel *label_regno;
+    QComboBox *comboBox_subject;
     QTableView *tableView_scores;
     QHBoxLayout *horizontalLayout_4;
     QPushButton *pushButton;
@@ -95,11 +97,69 @@ public:
 
         horizontalLayout_3->addLayout(horizontalLayout_2);
 
+        comboBox_subject = new QComboBox(centralwidget);
+        comboBox_subject->addItem(QString());
+        comboBox_subject->addItem(QString());
+        comboBox_subject->addItem(QString());
+        comboBox_subject->addItem(QString());
+        comboBox_subject->addItem(QString());
+        comboBox_subject->setObjectName("comboBox_subject");
+        comboBox_subject->setStyleSheet(QString::fromUtf8("QComboBox{\n"
+"    border: 2px solid rgb(16, 16, 16);\n"
+"    border-radius: 10px; \n"
+"    background-color:rgb(255, 255, 255,0);\n"
+"    min-width: 9px; \n"
+"    min-height: 9px; \n"
+"    padding: 5px; \n"
+"    margin: 0px; \n"
+"}\n"
+""));
+
+        horizontalLayout_3->addWidget(comboBox_subject);
+
 
         verticalLayout->addLayout(horizontalLayout_3);
 
         tableView_scores = new QTableView(centralwidget);
         tableView_scores->setObjectName("tableView_scores");
+        tableView_scores->setStyleSheet(QString::fromUtf8("QTableView {\n"
+"    border: 2px solid rgb(16, 16, 16);\n"
+"    border-radius: 10px;\n"
+"    background-color: rgba(255, 255, 255, 0); /* transparent */\n"
+"    gridline-color: rgba(16, 16, 16, 50);\n"
+"    padding: 5px;\n"
+"    margin: 0px;\n"
+"    selection-background-color: rgba(135, 206, 250, 180); /* light blue on selection */\n"
+"    selection-color: black;\n"
+"    show-grid: true;\n"
+"}\n"
+"\n"
+"QHeaderView::section {\n"
+"    background-color: rgba(200, 200, 200, 150);\n"
+"    padding: 4px;\n"
+"    border: 1px solid gray;\n"
+"    border-radius: 4px;\n"
+"    font-weight: bold;\n"
+"}\n"
+"\n"
+"QTableView::item {\n"
+"    border: 1px solid rgb(120, 120, 120);\n"
+"    border-radius: 6px;\n"
+"    padding: 5px;\n"
+"    background-color: rgba(255, 255, 255, 30); /* slight transparency */\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"QTableView::item:selected {\n"
+"    background-color: rgba(135, 206, 250, 180);\n"
+"    color: black;\n"
+"}\n"
+"\n"
+"QTableView::item:hover {\n"
+"    background-color: rgba(200, 200, 200, 100"
+                        ");\n"
+"}\n"
+""));
 
         verticalLayout->addWidget(tableView_scores);
 
@@ -159,6 +219,12 @@ public:
         label_name->setText(QString());
         label_2->setText(QCoreApplication::translate("score", "Reg. No.:", nullptr));
         label_regno->setText(QString());
+        comboBox_subject->setItemText(0, QCoreApplication::translate("score", "EEEG 202", nullptr));
+        comboBox_subject->setItemText(1, QCoreApplication::translate("score", "EEEG 211", nullptr));
+        comboBox_subject->setItemText(2, QCoreApplication::translate("score", "COMP 202", nullptr));
+        comboBox_subject->setItemText(3, QCoreApplication::translate("score", "MATH 208", nullptr));
+        comboBox_subject->setItemText(4, QCoreApplication::translate("score", "MCSC 201", nullptr));
+
         pushButton->setText(QCoreApplication::translate("score", "Load Scores", nullptr));
         pushButton_home->setText(QCoreApplication::translate("score", "Back to Home", nullptr));
     } // retranslateUi

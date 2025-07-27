@@ -111,7 +111,7 @@
      <string>Scores</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_class_performance">
+   <widget class="QPushButton" name="pushButton_task_management">
     <property name="geometry">
      <rect>
       <x>460</x>
@@ -139,8 +139,8 @@
 </string>
     </property>
     <property name="text">
-     <string>Class 
-Performace</string>
+     <string>Task 
+Management </string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_studentinto">

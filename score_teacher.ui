@@ -14,56 +14,43 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>111</x>
-      <y>21</y>
-      <width>258</width>
-      <height>251</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
-       <item>
-        <widget class="QLabel" name="label">
-         <property name="font">
-          <font>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="text">
-          <string>Reg No:</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEdit_regno_toshow"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_2">
-         <property name="text">
-          <string>Save </string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="QTableView" name="tableView_scores"/>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_4">
-       <item>
-        <widget class="QPushButton" name="pushButton_load">
-         <property name="font">
-          <font>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Reg No:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_regno_toshow">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color: rgb(255, 255, 255,0);
+    min-width: 8px; 
+    min-height: 8px;
+    padding: 5px;
+    margin: 0px;
+}
+</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_2">
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
     border: 2px solid rgb(16, 16, 16);
     border-radius: 10px; 
     background-color:rgb(255, 255, 255,0);
@@ -73,21 +60,16 @@
     margin: 0px; 
 }
 </string>
-         </property>
-         <property name="text">
-          <string>Load Scores</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_home">
-         <property name="font">
-          <font>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>Save </string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="comboBox_subject">
+          <property name="styleSheet">
+           <string notr="true">QComboBox{
     border: 2px solid rgb(16, 16, 16);
     border-radius: 10px; 
     background-color:rgb(255, 255, 255,0);
@@ -97,16 +79,134 @@
     margin: 0px; 
 }
 </string>
-         </property>
-         <property name="text">
-          <string>Back to Home</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
+          </property>
+          <item>
+           <property name="text">
+            <string>EEEG 202</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>MCSC 201</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>COMP 202</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>EEEG 211</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>MATH 208</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="QTableView" name="tableView_scores">
+        <property name="styleSheet">
+         <string notr="true">QTableView {
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0); /* transparent */
+    gridline-color: rgba(16, 16, 16, 50);
+    padding: 5px;
+    margin: 0px;
+    selection-background-color: rgba(135, 206, 250, 180); /* light blue on selection */
+    selection-color: black;
+    show-grid: true;
+}
+
+QHeaderView::section {
+    background-color: rgba(200, 200, 200, 150);
+    padding: 4px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+QTableView::item {
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 6px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 30); /* slight transparency */
+    color: black;
+}
+
+QTableView::item:selected {
+    background-color: rgba(135, 206, 250, 180);
+    color: black;
+}
+
+QTableView::item:hover {
+    background-color: rgba(200, 200, 200, 100);
+}
+</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QPushButton" name="pushButton_load">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Load Scores</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_home">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Back to Home</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>
