@@ -15,6 +15,11 @@ public:
     explicit attendance(QWidget *parent = nullptr);
     ~attendance();
 
+private slots:
+    void on_pushButton_home_clicked();
+
+    void on_pushButton_load_clicked();
+
 private:
     Ui::attendance *ui;
 };

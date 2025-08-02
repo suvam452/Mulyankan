@@ -4,6 +4,7 @@
 #include<QMessageBox>
 QString emailid;
 QString role;
+QString reg_no;
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
@@ -95,7 +96,8 @@ void MainWindow::on_pushButton_login_clicked()
         if (qry.exec()) {
             if (qry.next()) {
                 role = qry.value("role").toString();
-                qDebug() << "Login successful. Role: " << role;
+                reg_no=  qry.value("Reg_No").toString();
+                qDebug() << "Login successful. ";
 
                 databaseclose();
                 hide();

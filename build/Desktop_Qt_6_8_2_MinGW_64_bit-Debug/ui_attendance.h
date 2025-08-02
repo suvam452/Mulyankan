@@ -25,7 +25,7 @@ class Ui_attendance
 {
 public:
     QWidget *centralwidget;
-    QWidget *layoutWidget;
+    QVBoxLayout *verticalLayout;
     QVBoxLayout *verticalLayout_2;
     QTableView *tableView_attendance;
     QHBoxLayout *horizontalLayout_6;
@@ -39,13 +39,11 @@ public:
         attendance->resize(569, 364);
         centralwidget = new QWidget(attendance);
         centralwidget->setObjectName("centralwidget");
-        layoutWidget = new QWidget(centralwidget);
-        layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(110, 50, 258, 226));
-        verticalLayout_2 = new QVBoxLayout(layoutWidget);
+        verticalLayout = new QVBoxLayout(centralwidget);
+        verticalLayout->setObjectName("verticalLayout");
+        verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName("verticalLayout_2");
-        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
-        tableView_attendance = new QTableView(layoutWidget);
+        tableView_attendance = new QTableView(centralwidget);
         tableView_attendance->setObjectName("tableView_attendance");
         tableView_attendance->setStyleSheet(QString::fromUtf8("QTableView {\n"
 "    border: 2px solid rgb(16, 16, 16);\n"
@@ -90,7 +88,7 @@ public:
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setObjectName("horizontalLayout_6");
-        pushButton_load = new QPushButton(layoutWidget);
+        pushButton_load = new QPushButton(centralwidget);
         pushButton_load->setObjectName("pushButton_load");
         QFont font;
         font.setBold(true);
@@ -108,7 +106,7 @@ public:
 
         horizontalLayout_6->addWidget(pushButton_load);
 
-        pushButton_home = new QPushButton(layoutWidget);
+        pushButton_home = new QPushButton(centralwidget);
         pushButton_home->setObjectName("pushButton_home");
         pushButton_home->setFont(font);
         pushButton_home->setStyleSheet(QString::fromUtf8("QPushButton {\n"
@@ -126,6 +124,9 @@ public:
 
 
         verticalLayout_2->addLayout(horizontalLayout_6);
+
+
+        verticalLayout->addLayout(verticalLayout_2);
 
         attendance->setCentralWidget(centralwidget);
 

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>attendance_add_edit</class>
+ <widget class="QMainWindow" name="attendance_add_edit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>624</width>
+    <height>393</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QGroupBox {
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 15px;
+    margin-top: 10px; 
+    background-color:rgb(232, 232, 232);
+    padding: 5px;
+ 
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>100</y>
+      <width>351</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>10</pointsize>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="title">
+     <string>Add/Edit Information</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignmentFlag::AlignCenter</set>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Reg. No. :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Day: </string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLineEdit" name="lineEdit_regno">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color: rgb(255, 255, 255,0);
+    min-width: 8px; 
+    min-height: 8px;
+    padding: 5px;
+    margin: 0px;
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QComboBox" name="comboBox_day">
+               <property name="styleSheet">
+                <string notr="true">QComboBox{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>day1</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day2</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day3</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day4</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day5</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day6</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day7</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day8</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day9</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day10</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day11</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day12</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day13</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day14</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day15</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day16</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day17</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day18</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day19</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day20</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day21</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day22</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day23</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day24</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day25</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day26</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day27</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day28</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day29</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>day30</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_day_value">
+               <property name="styleSheet">
+                <string notr="true">QComboBox{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Present</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Absent</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_add">
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Add Info</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_edit">
+         <property name="font">
+          <font>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Edit Info</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

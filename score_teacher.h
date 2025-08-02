@@ -22,6 +22,8 @@ private slots:
 
     void on_pushButton_home_clicked();
 
+    void on_pushButton_add_edit_clicked();
+
 private:
     Ui::score_teacher *ui;
 };

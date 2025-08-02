@@ -29,7 +29,6 @@ public:
     QGroupBox *groupBox;
     QVBoxLayout *verticalLayout_5;
     QVBoxLayout *verticalLayout_4;
-    QLabel *label_5;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout;
     QLabel *label;
@@ -57,7 +56,7 @@ public:
         centralwidget->setObjectName("centralwidget");
         groupBox = new QGroupBox(centralwidget);
         groupBox->setObjectName("groupBox");
-        groupBox->setGeometry(QRect(110, 20, 401, 311));
+        groupBox->setGeometry(QRect(110, 20, 411, 341));
         QFont font;
         font.setPointSize(11);
         font.setBold(true);
@@ -66,7 +65,7 @@ public:
 "    border: 2px solid rgb(16, 16, 16);\n"
 "    border-radius: 15px;\n"
 "    margin-top: 10px; \n"
-"    background-color:rgb(232, 232, 232);\n"
+"    background-color:rgb(232, 232, 232,0);\n"
 "    padding: 5px;\n"
 " \n"
 "}\n"
@@ -77,15 +76,6 @@ public:
         verticalLayout_5->setObjectName("verticalLayout_5");
         verticalLayout_4 = new QVBoxLayout();
         verticalLayout_4->setObjectName("verticalLayout_4");
-        label_5 = new QLabel(groupBox);
-        label_5->setObjectName("label_5");
-        QFont font1;
-        font1.setBold(true);
-        label_5->setFont(font1);
-        label_5->setAlignment(Qt::AlignmentFlag::AlignCenter);
-
-        verticalLayout_4->addWidget(label_5);
-
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
         verticalLayout = new QVBoxLayout();
@@ -229,7 +219,10 @@ public:
 
         pushButton_update = new QPushButton(groupBox);
         pushButton_update->setObjectName("pushButton_update");
-        pushButton_update->setFont(font);
+        QFont font1;
+        font1.setPointSize(10);
+        font1.setBold(true);
+        pushButton_update->setFont(font1);
         pushButton_update->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    border: 2px solid rgb(16, 16, 16);\n"
 "    border-radius: 10px; \n"
@@ -248,7 +241,7 @@ public:
 
         pushButton_home = new QPushButton(groupBox);
         pushButton_home->setObjectName("pushButton_home");
-        pushButton_home->setFont(font);
+        pushButton_home->setFont(font1);
         pushButton_home->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    border: 2px solid rgb(16, 16, 16);\n"
 "    border-radius: 10px; \n"
@@ -272,8 +265,7 @@ public:
     void retranslateUi(QMainWindow *updateaccount)
     {
         updateaccount->setWindowTitle(QCoreApplication::translate("updateaccount", "MainWindow", nullptr));
-        groupBox->setTitle(QString());
-        label_5->setText(QCoreApplication::translate("updateaccount", "Update your Account information here", nullptr));
+        groupBox->setTitle(QCoreApplication::translate("updateaccount", "Update Information", nullptr));
         label->setText(QCoreApplication::translate("updateaccount", "Name", nullptr));
         label_2->setText(QCoreApplication::translate("updateaccount", "Phone No.", nullptr));
         label_3->setText(QCoreApplication::translate("updateaccount", "Email ID", nullptr));

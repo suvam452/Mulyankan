@@ -10,7 +10,10 @@ CONFIG += c++17
 
 SOURCES += \
     assignment.cpp \
+    assignment_add_edit.cpp \
+    assignment_teacher.cpp \
     attendance.cpp \
+    attendance_add_edit.cpp \
     attendance_teacher.cpp \
     contactus.cpp \
     landingpage.cpp \
@@ -19,6 +22,7 @@ SOURCES += \
     profileinfo.cpp \
     registration.cpp \
     score.cpp \
+    score_add_edit.cpp \
     score_teacher.cpp \
     student_info.cpp \
     task_management.cpp \
@@ -28,7 +32,10 @@ SOURCES += \
 
 HEADERS += \
     assignment.h \
+    assignment_add_edit.h \
+    assignment_teacher.h \
     attendance.h \
+    attendance_add_edit.h \
     attendance_teacher.h \
     contactus.h \
     landingpage.h \
@@ -36,6 +43,7 @@ HEADERS += \
     profileinfo.h \
     registration.h \
     score.h \
+    score_add_edit.h \
     score_teacher.h \
     student_info.h \
     task_management.h \
@@ -44,7 +52,10 @@ HEADERS += \
 
 FORMS += \
     assignment.ui \
+    assignment_add_edit.ui \
+    assignment_teacher.ui \
     attendance.ui \
+    attendance_add_edit.ui \
     attendance_teacher.ui \
     contactus.ui \
     landingpage.ui \
@@ -52,6 +63,7 @@ FORMS += \
     profileinfo.ui \
     registration.ui \
     score.ui \
+    score_add_edit.ui \
     score_teacher.ui \
     student_info.ui \
     task_management.ui \

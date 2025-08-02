@@ -53,6 +53,7 @@ public:
     QVBoxLayout *verticalLayout_3;
     QPushButton *pushButton_delete;
     QPushButton *pushButton_update;
+    QPushButton *pushButton_back;
 
     void setupUi(QMainWindow *profileinfo)
     {
@@ -235,6 +236,20 @@ public:
 
         verticalLayout_3->addWidget(pushButton_update);
 
+        pushButton_back = new QPushButton(centralwidget);
+        pushButton_back->setObjectName("pushButton_back");
+        pushButton_back->setGeometry(QRect(10, 10, 51, 24));
+        pushButton_back->setFont(font);
+        pushButton_back->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border: 2px solid #8f8f91;\n"
+"    border-radius: 10px; \n"
+"    background-color:rgb(255, 255, 255,0);\n"
+"    min-width: 10px; \n"
+"    min-height: 10px; \n"
+"    padding: 5px; \n"
+"    margin: 0px; \n"
+"}\n"
+""));
         profileinfo->setCentralWidget(centralwidget);
 
         retranslateUi(profileinfo);
@@ -262,6 +277,7 @@ public:
         label_reg_no->setText(QString());
         pushButton_delete->setText(QCoreApplication::translate("profileinfo", "DELETE ACCOUNT", nullptr));
         pushButton_update->setText(QCoreApplication::translate("profileinfo", "UPDATE INFO", nullptr));
+        pushButton_back->setText(QCoreApplication::translate("profileinfo", "Back", nullptr));
     } // retranslateUi
 
 };

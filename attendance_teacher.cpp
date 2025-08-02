@@ -2,6 +2,7 @@
 #include "ui_attendance_teacher.h"
 #include"mainwindow.h"
 #include"landingpage.h"
+#include"attendance_add_edit.h"
 attendance_teacher::attendance_teacher(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::attendance_teacher)
@@ -35,5 +36,13 @@ void attendance_teacher::on_pushButton_home_2_clicked()
     hide();
     landingpage *backkk= new landingpage(this);
     backkk->show();
+}
+
+
+void attendance_teacher::on_pushButton_add_clicked()
+{
+    hide();
+    attendance_add_edit *adddd= new attendance_add_edit(this);
+    adddd->show();
 }
 

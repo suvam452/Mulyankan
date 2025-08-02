@@ -25,24 +25,25 @@ class Ui_attendance_teacher
 {
 public:
     QWidget *centralwidget;
-    QVBoxLayout *verticalLayout_3;
     QVBoxLayout *verticalLayout_2;
+    QVBoxLayout *verticalLayout;
     QTableView *tableView_attendance;
-    QHBoxLayout *horizontalLayout_6;
+    QHBoxLayout *horizontalLayout;
     QPushButton *pushButton_load;
     QPushButton *pushButton_home_2;
+    QPushButton *pushButton_add;
 
     void setupUi(QMainWindow *attendance_teacher)
     {
         if (attendance_teacher->objectName().isEmpty())
             attendance_teacher->setObjectName("attendance_teacher");
-        attendance_teacher->resize(596, 368);
+        attendance_teacher->resize(607, 385);
         centralwidget = new QWidget(attendance_teacher);
         centralwidget->setObjectName("centralwidget");
-        verticalLayout_3 = new QVBoxLayout(centralwidget);
-        verticalLayout_3->setObjectName("verticalLayout_3");
-        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2 = new QVBoxLayout(centralwidget);
         verticalLayout_2->setObjectName("verticalLayout_2");
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName("verticalLayout");
         tableView_attendance = new QTableView(centralwidget);
         tableView_attendance->setObjectName("tableView_attendance");
         tableView_attendance->setStyleSheet(QString::fromUtf8("QTableView {\n"
@@ -84,10 +85,10 @@ public:
 "}\n"
 ""));
 
-        verticalLayout_2->addWidget(tableView_attendance);
+        verticalLayout->addWidget(tableView_attendance);
 
-        horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setObjectName("horizontalLayout_6");
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName("horizontalLayout");
         pushButton_load = new QPushButton(centralwidget);
         pushButton_load->setObjectName("pushButton_load");
         QFont font;
@@ -104,7 +105,7 @@ public:
 "}\n"
 ""));
 
-        horizontalLayout_6->addWidget(pushButton_load);
+        horizontalLayout->addWidget(pushButton_load);
 
         pushButton_home_2 = new QPushButton(centralwidget);
         pushButton_home_2->setObjectName("pushButton_home_2");
@@ -120,13 +121,29 @@ public:
 "}\n"
 ""));
 
-        horizontalLayout_6->addWidget(pushButton_home_2);
+        horizontalLayout->addWidget(pushButton_home_2);
+
+        pushButton_add = new QPushButton(centralwidget);
+        pushButton_add->setObjectName("pushButton_add");
+        pushButton_add->setFont(font);
+        pushButton_add->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border: 2px solid rgb(16, 16, 16);\n"
+"    border-radius: 10px; \n"
+"    background-color:rgb(255, 255, 255,0);\n"
+"    min-width: 9px; \n"
+"    min-height: 9px; \n"
+"    padding: 5px; \n"
+"    margin: 0px; \n"
+"}\n"
+""));
+
+        horizontalLayout->addWidget(pushButton_add);
 
 
-        verticalLayout_2->addLayout(horizontalLayout_6);
+        verticalLayout->addLayout(horizontalLayout);
 
 
-        verticalLayout_3->addLayout(verticalLayout_2);
+        verticalLayout_2->addLayout(verticalLayout);
 
         attendance_teacher->setCentralWidget(centralwidget);
 
@@ -140,6 +157,7 @@ public:
         attendance_teacher->setWindowTitle(QCoreApplication::translate("attendance_teacher", "MainWindow", nullptr));
         pushButton_load->setText(QCoreApplication::translate("attendance_teacher", "Load Attendance", nullptr));
         pushButton_home_2->setText(QCoreApplication::translate("attendance_teacher", "Back to Home", nullptr));
+        pushButton_add->setText(QCoreApplication::translate("attendance_teacher", "Add Info", nullptr));
     } // retranslateUi
 
 };

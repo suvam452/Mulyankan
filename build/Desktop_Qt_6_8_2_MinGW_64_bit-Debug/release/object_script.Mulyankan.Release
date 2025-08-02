@@ -1,5 +1,8 @@
 release/assignment.o
+release/assignment_add_edit.o
+release/assignment_teacher.o
 release/attendance.o
+release/attendance_add_edit.o
 release/attendance_teacher.o
 release/contactus.o
 release/landingpage.o
@@ -8,6 +11,7 @@ release/mainwindow.o
 release/profileinfo.o
 release/registration.o
 release/score.o
+release/score_add_edit.o
 release/score_teacher.o
 release/student_info.o
 release/task_management.o
@@ -15,7 +19,10 @@ release/task_view.o
 release/updateaccount.o
 release/qrc_Resorc.o
 release/moc_assignment.o
+release/moc_assignment_add_edit.o
+release/moc_assignment_teacher.o
 release/moc_attendance.o
+release/moc_attendance_add_edit.o
 release/moc_attendance_teacher.o
 release/moc_contactus.o
 release/moc_landingpage.o
@@ -23,6 +30,7 @@ release/moc_mainwindow.o
 release/moc_profileinfo.o
 release/moc_registration.o
 release/moc_score.o
+release/moc_score_add_edit.o
 release/moc_score_teacher.o
 release/moc_student_info.o
 release/moc_task_management.o

@@ -14,20 +14,13 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="layoutWidget">
-    <property name="geometry">
-     <rect>
-      <x>110</x>
-      <y>50</y>
-      <width>258</width>
-      <height>226</height>
-     </rect>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout_2">
-     <item>
-      <widget class="QTableView" name="tableView_attendance">
-       <property name="styleSheet">
-        <string notr="true">QTableView {
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QTableView" name="tableView_attendance">
+        <property name="styleSheet">
+         <string notr="true">QTableView {
     border: 2px solid rgb(16, 16, 16);
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0); /* transparent */
@@ -64,20 +57,20 @@ QTableView::item:hover {
     background-color: rgba(200, 200, 200, 100);
 }
 </string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_6">
-       <item>
-        <widget class="QPushButton" name="pushButton_load">
-         <property name="font">
-          <font>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QPushButton" name="pushButton_load">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
     border: 2px solid rgb(16, 16, 16);
     border-radius: 10px; 
     background-color:rgb(255, 255, 255,0);
@@ -87,21 +80,21 @@ QTableView::item:hover {
     margin: 0px; 
 }
 </string>
-         </property>
-         <property name="text">
-          <string>Load Attendance</string>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QPushButton" name="pushButton_home">
-         <property name="font">
-          <font>
-           <bold>true</bold>
-          </font>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">QPushButton {
+          </property>
+          <property name="text">
+           <string>Load Attendance</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_home">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
     border: 2px solid rgb(16, 16, 16);
     border-radius: 10px; 
     background-color:rgb(255, 255, 255,0);
@@ -111,16 +104,17 @@ QTableView::item:hover {
     margin: 0px; 
 }
 </string>
-         </property>
-         <property name="text">
-          <string>Back to Home</string>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-    </layout>
-   </widget>
+          </property>
+          <property name="text">
+           <string>Back to Home</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

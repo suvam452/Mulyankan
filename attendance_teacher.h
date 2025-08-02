@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButton_home_2_clicked();
 
+    void on_pushButton_add_clicked();
+
 private:
     Ui::attendance_teacher *ui;
 };

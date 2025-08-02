@@ -11,6 +11,7 @@
 #include"attendance.h"
 #include"task_management.h"
 #include"assignment.h"
+#include"assignment_teacher.h"
 landingpage::landingpage(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::landingpage)
@@ -121,8 +122,18 @@ taskk->show();
 
 void landingpage::on_pushButton_assignment_clicked()
 {
-    hide();
-    assignment *assig= new assignment(this);
-    assig->show();
+    if (role.compare("Student", Qt::CaseInsensitive) == 0) {
+        hide();
+        assignment *assig= new assignment(this);
+        assig->show();
+
+    }
+    else if (role.compare("Teacher", Qt::CaseInsensitive) == 0) {
+        hide();
+        assignment_teacher *stttt1= new assignment_teacher(this);
+        stttt1->show();
+
+    }
+
 }
 

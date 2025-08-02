@@ -6,17 +6,17 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>596</width>
-    <height>368</height>
+    <width>607</width>
+    <height>385</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_3">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QVBoxLayout" name="verticalLayout">
       <item>
        <widget class="QTableView" name="tableView_attendance">
         <property name="styleSheet">
@@ -61,7 +61,7 @@ QTableView::item:hover {
        </widget>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
          <widget class="QPushButton" name="pushButton_load">
           <property name="font">
@@ -107,6 +107,30 @@ QTableView::item:hover {
           </property>
           <property name="text">
            <string>Back to Home</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_add">
+          <property name="font">
+           <font>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Add Info</string>
           </property>
          </widget>
         </item>

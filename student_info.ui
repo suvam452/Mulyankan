@@ -82,7 +82,7 @@ QTableView::item:hover {
 </string>
           </property>
           <property name="text">
-           <string>Load Scores</string>
+           <string>Load Info</string>
           </property>
          </widget>
         </item>

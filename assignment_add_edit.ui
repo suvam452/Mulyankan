@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>assignment_add_edit</class>
+ <widget class="QMainWindow" name="assignment_add_edit">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>568</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_5">
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="font">
+       <font>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QGroupBox {
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 15px;
+    margin-top: 10px; 
+    background-color:rgb(232, 232, 232);
+    padding: 5px;
+ 
+}
+
+</string>
+      </property>
+      <property name="title">
+       <string>Add/Edit Information</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_4">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Subject:</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="comboBox_subject">
+             <property name="styleSheet">
+              <string notr="true">QComboBox{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+             </property>
+             <item>
+              <property name="text">
+               <string>EEEG 202</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>EEEG 211</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>COMP 202</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>MATH 208</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>MCSC 201</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_add_2">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Save</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QLabel" name="label">
+             <property name="font">
+              <font>
+               <pointsize>11</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Reg. No. :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEdit_regno">
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color: rgb(255, 255, 255,0);
+    min-width: 8px; 
+    min-height: 8px;
+    padding: 5px;
+    margin: 0px;
+}
+</string>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Assignment 1:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Assignment 2:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Assignment 3:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Assignment 4:</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="text">
+                <string>Assignment 5:</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QComboBox" name="comboBox_assignmen_value_1">
+               <property name="styleSheet">
+                <string notr="true">QComboBox{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Submitted</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Not Submitted</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_assignmen_value_2">
+               <property name="styleSheet">
+                <string notr="true">QComboBox{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Submitted</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Not Submitted</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_assignmen_value_3">
+               <property name="styleSheet">
+                <string notr="true">QComboBox{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Submitted</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Not Submitted</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_assignmen_value_4">
+               <property name="styleSheet">
+                <string notr="true">QComboBox{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Submitted</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Not Submitted</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="comboBox_assignmen_value_5">
+               <property name="styleSheet">
+                <string notr="true">QComboBox{
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+               </property>
+               <item>
+                <property name="text">
+                 <string>Submitted</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Not Submitted</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QPushButton" name="pushButton_add">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Add Info</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_edit">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Edit Info</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_back">
+             <property name="font">
+              <font>
+               <pointsize>9</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    border: 2px solid rgb(16, 16, 16);
+    border-radius: 10px; 
+    background-color:rgb(255, 255, 255,0);
+    min-width: 9px; 
+    min-height: 9px; 
+    padding: 5px; 
+    margin: 0px; 
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Back</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

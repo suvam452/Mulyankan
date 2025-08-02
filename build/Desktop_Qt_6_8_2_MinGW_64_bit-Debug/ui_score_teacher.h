@@ -14,8 +14,6 @@
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLabel>
-#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QTableView>
@@ -31,14 +29,12 @@ public:
     QVBoxLayout *verticalLayout_2;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
-    QLabel *label;
-    QLineEdit *lineEdit_regno_toshow;
-    QPushButton *pushButton_2;
     QComboBox *comboBox_subject;
     QTableView *tableView_scores;
     QHBoxLayout *horizontalLayout_4;
     QPushButton *pushButton_load;
     QPushButton *pushButton_home;
+    QPushButton *pushButton_add_edit;
 
     void setupUi(QMainWindow *score_teacher)
     {
@@ -53,44 +49,6 @@ public:
         verticalLayout->setObjectName("verticalLayout");
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        label = new QLabel(centralwidget);
-        label->setObjectName("label");
-        QFont font;
-        font.setBold(true);
-        label->setFont(font);
-
-        horizontalLayout->addWidget(label);
-
-        lineEdit_regno_toshow = new QLineEdit(centralwidget);
-        lineEdit_regno_toshow->setObjectName("lineEdit_regno_toshow");
-        lineEdit_regno_toshow->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
-"    border: 2px solid rgb(16, 16, 16);\n"
-"    border-radius: 10px; \n"
-"    background-color: rgb(255, 255, 255,0);\n"
-"    min-width: 8px; \n"
-"    min-height: 8px;\n"
-"    padding: 5px;\n"
-"    margin: 0px;\n"
-"}\n"
-""));
-
-        horizontalLayout->addWidget(lineEdit_regno_toshow);
-
-        pushButton_2 = new QPushButton(centralwidget);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
-"    border: 2px solid rgb(16, 16, 16);\n"
-"    border-radius: 10px; \n"
-"    background-color:rgb(255, 255, 255,0);\n"
-"    min-width: 9px; \n"
-"    min-height: 9px; \n"
-"    padding: 5px; \n"
-"    margin: 0px; \n"
-"}\n"
-""));
-
-        horizontalLayout->addWidget(pushButton_2);
-
         comboBox_subject = new QComboBox(centralwidget);
         comboBox_subject->addItem(QString());
         comboBox_subject->addItem(QString());
@@ -161,6 +119,8 @@ public:
         horizontalLayout_4->setObjectName("horizontalLayout_4");
         pushButton_load = new QPushButton(centralwidget);
         pushButton_load->setObjectName("pushButton_load");
+        QFont font;
+        font.setBold(true);
         pushButton_load->setFont(font);
         pushButton_load->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    border: 2px solid rgb(16, 16, 16);\n"
@@ -191,6 +151,25 @@ public:
 
         horizontalLayout_4->addWidget(pushButton_home);
 
+        pushButton_add_edit = new QPushButton(centralwidget);
+        pushButton_add_edit->setObjectName("pushButton_add_edit");
+        QFont font1;
+        font1.setPointSize(9);
+        font1.setBold(true);
+        pushButton_add_edit->setFont(font1);
+        pushButton_add_edit->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border: 2px solid rgb(16, 16, 16);\n"
+"    border-radius: 10px; \n"
+"    background-color:rgb(255, 255, 255,0);\n"
+"    min-width: 9px; \n"
+"    min-height: 9px; \n"
+"    padding: 5px; \n"
+"    margin: 0px; \n"
+"}\n"
+""));
+
+        horizontalLayout_4->addWidget(pushButton_add_edit);
+
 
         verticalLayout->addLayout(horizontalLayout_4);
 
@@ -207,8 +186,6 @@ public:
     void retranslateUi(QMainWindow *score_teacher)
     {
         score_teacher->setWindowTitle(QCoreApplication::translate("score_teacher", "MainWindow", nullptr));
-        label->setText(QCoreApplication::translate("score_teacher", "Reg No:", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("score_teacher", "Save ", nullptr));
         comboBox_subject->setItemText(0, QCoreApplication::translate("score_teacher", "EEEG 202", nullptr));
         comboBox_subject->setItemText(1, QCoreApplication::translate("score_teacher", "MCSC 201", nullptr));
         comboBox_subject->setItemText(2, QCoreApplication::translate("score_teacher", "COMP 202", nullptr));
@@ -217,6 +194,7 @@ public:
 
         pushButton_load->setText(QCoreApplication::translate("score_teacher", "Load Scores", nullptr));
         pushButton_home->setText(QCoreApplication::translate("score_teacher", "Back to Home", nullptr));
+        pushButton_add_edit->setText(QCoreApplication::translate("score_teacher", "Add/Edit score", nullptr));
     } // retranslateUi
 
 };

@@ -60,4 +60,5 @@ private:
 };
 extern QString emailid;
 extern QString role;
+extern QString reg_no;
 #endif // MAINWINDOW_H

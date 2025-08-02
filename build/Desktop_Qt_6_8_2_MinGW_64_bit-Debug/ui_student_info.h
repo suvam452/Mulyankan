@@ -138,7 +138,7 @@ public:
     void retranslateUi(QMainWindow *student_info)
     {
         student_info->setWindowTitle(QCoreApplication::translate("student_info", "MainWindow", nullptr));
-        pushButton_load->setText(QCoreApplication::translate("student_info", "Load Scores", nullptr));
+        pushButton_load->setText(QCoreApplication::translate("student_info", "Load Info", nullptr));
         pushButton_home->setText(QCoreApplication::translate("student_info", "Back to Home", nullptr));
     } // retranslateUi
 

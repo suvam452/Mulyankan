@@ -3,6 +3,7 @@
 #include"updateaccount.h"
 #include"mainwindow.h"
 #include<QMessageBox>
+#include"landingpage.h"
 profileinfo::profileinfo(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::profileinfo)
@@ -78,5 +79,13 @@ void profileinfo::on_pushButton_delete_clicked()
     {
         qDebug() << "Query execution failed: " << qry.lastError().text();
     }
+}
+
+
+void profileinfo::on_pushButton_back_clicked()
+{
+    hide();
+    landingpage *backk= new landingpage(this);
+    backk->show();
 }
 
