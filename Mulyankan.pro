@@ -44,6 +44,7 @@ HEADERS += \
     profileinfo.h \
     registration.h \
     score.h \
+    score.h \
     score_add_edit.h \
     score_teacher.h \
     student_info.h \
