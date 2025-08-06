@@ -53,6 +53,8 @@ private slots:
 
     void on_pushButton_register_clicked();
 
+    void on_pushButton_forgot_clicked();
+
 private:
     Ui::MainWindow *ui;
     landingpage *land;

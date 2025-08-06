@@ -2,6 +2,7 @@
 #include "ui_attendance_add_edit.h"
 #include"mainwindow.h"
 #include"QMessageBox"
+#include"attendance_teacher.h"
 attendance_add_edit::attendance_add_edit(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::attendance_add_edit)
@@ -72,6 +73,15 @@ void attendance_add_edit::on_pushButton_edit_clicked()
     } else {
         QMessageBox::critical(this, "Check", qry.lastError().text());
     }
+
+}
+
+
+void attendance_add_edit::on_pushButton_back_2_clicked()
+{
+    hide();
+    attendance_teacher *newww= new attendance_teacher(this);
+    newww->show();
 
 }
 

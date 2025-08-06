@@ -16,6 +16,7 @@ debug/score_teacher.o
 debug/student_info.o
 debug/task_management.o
 debug/task_view.o
+debug/termsncond.o
 debug/updateaccount.o
 debug/qrc_Resorc.o
 debug/moc_assignment.o
@@ -35,4 +36,5 @@ debug/moc_score_teacher.o
 debug/moc_student_info.o
 debug/moc_task_management.o
 debug/moc_task_view.o
+debug/moc_termsncond.o
 debug/moc_updateaccount.o

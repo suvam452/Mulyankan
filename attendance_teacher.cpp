@@ -46,3 +46,6 @@ void attendance_teacher::on_pushButton_add_clicked()
     adddd->show();
 }
 
+
+
+

@@ -157,7 +157,7 @@ public:
         attendance_teacher->setWindowTitle(QCoreApplication::translate("attendance_teacher", "MainWindow", nullptr));
         pushButton_load->setText(QCoreApplication::translate("attendance_teacher", "Load Attendance", nullptr));
         pushButton_home_2->setText(QCoreApplication::translate("attendance_teacher", "Back to Home", nullptr));
-        pushButton_add->setText(QCoreApplication::translate("attendance_teacher", "Add Info", nullptr));
+        pushButton_add->setText(QCoreApplication::translate("attendance_teacher", "Add/Edit Info", nullptr));
     } // retranslateUi
 
 };

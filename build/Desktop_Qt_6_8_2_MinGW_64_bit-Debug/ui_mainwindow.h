@@ -43,6 +43,7 @@ public:
     QPushButton *pushButton_register;
     QLabel *label_pic;
     QLabel *label_status2;
+    QPushButton *pushButton_forgot;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -188,6 +189,23 @@ public:
         font1.setPointSize(10);
         font1.setBold(true);
         label_status2->setFont(font1);
+        pushButton_forgot = new QPushButton(centralwidget);
+        pushButton_forgot->setObjectName("pushButton_forgot");
+        pushButton_forgot->setGeometry(QRect(290, 390, 141, 31));
+        QFont font2;
+        font2.setPointSize(9);
+        font2.setBold(true);
+        pushButton_forgot->setFont(font2);
+        pushButton_forgot->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border: 2px solid rgb(16, 16, 16);\n"
+"    border-radius: 10px; \n"
+"    background-color:rgb(255, 255, 255,0);\n"
+"    min-width: 9px; \n"
+"    min-height: 9px; \n"
+"    padding: 5px; \n"
+"    margin: 0px; \n"
+"}\n"
+""));
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
@@ -206,6 +224,7 @@ public:
         pushButton_register->setText(QCoreApplication::translate("MainWindow", "Not a user? Register", nullptr));
         label_pic->setText(QString());
         label_status2->setText(QCoreApplication::translate("MainWindow", "[+]Status ", nullptr));
+        pushButton_forgot->setText(QCoreApplication::translate("MainWindow", "Forgot Password", nullptr));
     } // retranslateUi
 
 };

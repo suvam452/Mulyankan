@@ -163,8 +163,7 @@ public:
         pushButton_scores->setText(QCoreApplication::translate("landingpage", "Scores", nullptr));
         pushButton_task_management->setText(QCoreApplication::translate("landingpage", "Task \n"
 "Management ", nullptr));
-        pushButton_studentinto->setText(QCoreApplication::translate("landingpage", "View \n"
-"Student Info", nullptr));
+        pushButton_studentinto->setText(QCoreApplication::translate("landingpage", "View Info", nullptr));
         toolBar->setWindowTitle(QCoreApplication::translate("landingpage", "toolBar", nullptr));
     } // retranslateUi
 

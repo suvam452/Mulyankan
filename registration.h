@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButton_loginpage_clicked();
 
+    void on_pushButton_terms_clicked();
+
 private:
     Ui::registration *ui;
 };

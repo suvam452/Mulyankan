@@ -2,6 +2,7 @@
 #include "ui_updateaccount.h"
 #include "mainwindow.h"
 #include"landingpage.h"
+#include"profileinfo.h"
 #include<QMessageBox>
 updateaccount::updateaccount(QWidget *parent)
     : QMainWindow(parent)
@@ -50,7 +51,7 @@ void updateaccount::on_pushButton_update_clicked()
 void updateaccount::on_pushButton_home_clicked()
 {
     hide();
-    landingpage *back1=new landingpage(this);
+    profileinfo *back1=new profileinfo(this);
     back1->show();
 
 }

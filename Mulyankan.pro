@@ -27,6 +27,7 @@ SOURCES += \
     student_info.cpp \
     task_management.cpp \
     task_view.cpp \
+    termsncond.cpp \
     updateaccount.cpp
 
 
@@ -48,6 +49,7 @@ HEADERS += \
     student_info.h \
     task_management.h \
     task_view.h \
+    termsncond.h \
     updateaccount.h
 
 FORMS += \
@@ -68,6 +70,7 @@ FORMS += \
     student_info.ui \
     task_management.ui \
     task_view.ui \
+    termsncond.ui \
     updateaccount.ui
 
 # Default rules for deployment.

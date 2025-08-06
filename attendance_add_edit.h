@@ -20,6 +20,8 @@ private slots:
 
     void on_pushButton_edit_clicked();
 
+    void on_pushButton_back_2_clicked();
+
 private:
     Ui::attendance_add_edit *ui;
 };

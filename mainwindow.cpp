@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include<QPixmap>
 #include<QMessageBox>
+#include"QInputDialog"
 QString emailid;
 QString role;
 QString reg_no;
@@ -124,5 +125,56 @@ void MainWindow::on_pushButton_register_clicked()
     hide();
     reg1 = new registration(this);
     reg1->show();
+}
+
+
+void MainWindow::on_pushButton_forgot_clicked()
+{
+    bool ok;
+    QString emailid = QInputDialog::getText(
+        this,
+        tr("Forgot Password"),
+        tr("Enter your Emailid:"),
+        QLineEdit::Normal,
+        QString(),
+        &ok
+        );
+
+
+
+    if (ok && !emailid.isEmpty()) {
+
+        QSqlQuery query;
+        query.prepare("SELECT password FROM students WHERE emailid ='"+emailid+"'");
+
+        if (query.exec()) {
+            if (query.next()) {
+
+                QString password = query.value(0).toString();
+
+
+                QMessageBox::information(
+                    this,
+                    tr("Your Password"),
+                    tr("Your password is: %1").arg(password)
+                    );
+            } else {
+
+                QMessageBox::warning(
+                    this,
+                    tr("Error"),
+                    tr("Emailid not found.")
+                    );
+            }
+        } else {
+
+            QMessageBox::critical(
+                this,
+                tr("Error"),
+                tr("Failed to query the database: %1").arg(query.lastError().text())
+                );
+        }
+
+    }
 }
 

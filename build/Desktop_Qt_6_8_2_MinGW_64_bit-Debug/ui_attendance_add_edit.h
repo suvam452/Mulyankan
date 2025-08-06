@@ -41,6 +41,7 @@ public:
     QComboBox *comboBox_day_value;
     QPushButton *pushButton_add;
     QPushButton *pushButton_edit;
+    QPushButton *pushButton_back_2;
 
     void setupUi(QMainWindow *attendance_add_edit)
     {
@@ -220,6 +221,20 @@ public:
 
         verticalLayout_4->addLayout(verticalLayout_3);
 
+        pushButton_back_2 = new QPushButton(centralwidget);
+        pushButton_back_2->setObjectName("pushButton_back_2");
+        pushButton_back_2->setGeometry(QRect(20, 30, 51, 23));
+        pushButton_back_2->setFont(font2);
+        pushButton_back_2->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border: 2px solid rgb(16, 16, 16);\n"
+"    border-radius: 10px; \n"
+"    background-color:rgb(255, 255, 255,0);\n"
+"    min-width: 9px; \n"
+"    min-height: 9px; \n"
+"    padding: 5px; \n"
+"    margin: 0px; \n"
+"}\n"
+""));
         attendance_add_edit->setCentralWidget(centralwidget);
 
         retranslateUi(attendance_add_edit);
@@ -270,6 +285,7 @@ public:
 
         pushButton_add->setText(QCoreApplication::translate("attendance_add_edit", "Add Info", nullptr));
         pushButton_edit->setText(QCoreApplication::translate("attendance_add_edit", "Edit Info", nullptr));
+        pushButton_back_2->setText(QCoreApplication::translate("attendance_add_edit", "Back", nullptr));
     } // retranslateUi
 
 };

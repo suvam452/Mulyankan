@@ -64,7 +64,12 @@ void task_view::on_pushButton_delete_clicked()
     }
     else
     {
-        qDebug() << "Query execution failed: " << qry.lastError().text();
+        QMessageBox::warning(this,"Error","qry.lastError().text()");
     }
 }
+
+
+
+
+
 

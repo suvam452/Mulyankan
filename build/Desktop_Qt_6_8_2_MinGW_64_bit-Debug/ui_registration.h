@@ -53,6 +53,7 @@ public:
     QVBoxLayout *verticalLayout_3;
     QPushButton *pushButton_loginpage;
     QLabel *label_status2;
+    QPushButton *pushButton_terms;
 
     void setupUi(QMainWindow *registration)
     {
@@ -307,8 +308,22 @@ public:
 
         label_status2 = new QLabel(centralwidget);
         label_status2->setObjectName("label_status2");
-        label_status2->setGeometry(QRect(80, 450, 341, 21));
+        label_status2->setGeometry(QRect(10, 450, 341, 21));
         label_status2->setFont(font1);
+        pushButton_terms = new QPushButton(centralwidget);
+        pushButton_terms->setObjectName("pushButton_terms");
+        pushButton_terms->setGeometry(QRect(500, 450, 171, 23));
+        pushButton_terms->setFont(font1);
+        pushButton_terms->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    border: 2px solid rgba(0, 0, 0, 0); /* Fully transparent */\n"
+"    border-radius: 10px;\n"
+"    background-color: rgba(255, 255, 255, 0); /* Fully transparent */\n"
+"    min-width: 9px;\n"
+"    min-height: 9px;\n"
+"    padding: 5px;\n"
+"    margin: 0px;\n"
+"}\n"
+""));
         registration->setCentralWidget(centralwidget);
 
         retranslateUi(registration);
@@ -343,6 +358,7 @@ public:
         pushButton_register->setText(QCoreApplication::translate("registration", "Register ", nullptr));
         pushButton_loginpage->setText(QCoreApplication::translate("registration", "Back to Login Page", nullptr));
         label_status2->setText(QCoreApplication::translate("registration", "[+]Status ", nullptr));
+        pushButton_terms->setText(QCoreApplication::translate("registration", "Terms and Conditions", nullptr));
     } // retranslateUi
 
 };

@@ -16,6 +16,7 @@ release/score_teacher.o
 release/student_info.o
 release/task_management.o
 release/task_view.o
+release/termsncond.o
 release/updateaccount.o
 release/qrc_Resorc.o
 release/moc_assignment.o
@@ -35,4 +36,5 @@ release/moc_score_teacher.o
 release/moc_student_info.o
 release/moc_task_management.o
 release/moc_task_view.o
+release/moc_termsncond.o
 release/moc_updateaccount.o

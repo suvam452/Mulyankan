@@ -171,8 +171,7 @@ Management </string>
 </string>
     </property>
     <property name="text">
-     <string>View 
-Student Info</string>
+     <string>View Info</string>
     </property>
    </widget>
   </widget>

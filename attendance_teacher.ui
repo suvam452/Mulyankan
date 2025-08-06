@@ -130,7 +130,7 @@ QTableView::item:hover {
 </string>
           </property>
           <property name="text">
-           <string>Add Info</string>
+           <string>Add/Edit Info</string>
           </property>
          </widget>
         </item>

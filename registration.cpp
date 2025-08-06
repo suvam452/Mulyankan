@@ -2,6 +2,7 @@
 #include "ui_registration.h"
 #include"mainwindow.h"
 #include<QMessageBox>
+#include"termsncond.h"
 
 registration::registration(QWidget *parent)
     : QMainWindow(parent)
@@ -37,7 +38,8 @@ void registration::on_pushButton_register_clicked()
         QString role= ui->comboBox_role->currentText();
         QString grade=ui->comboBox_grade->currentText();
         QString reg_no=ui->lineEdit_regno->text();
-        if(emailid.endsWith("@student.ku.edu.np")  )
+
+             if(emailid.endsWith("@student.ku.edu.np") || emailid.endsWith("@teacher.ku.edu.np")  )
         {
             if(password.length() >=8 )
             {
@@ -96,5 +98,13 @@ void registration::on_pushButton_loginpage_clicked()
     hide();
     MainWindow *open = new MainWindow(this);
     open->show();
+}
+
+
+void registration::on_pushButton_terms_clicked()
+{
+    hide();
+    termsncond *terrm= new termsncond(this);
+    terrm->show();
 }
 

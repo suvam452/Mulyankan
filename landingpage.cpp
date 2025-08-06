@@ -116,7 +116,7 @@ void landingpage::on_pushButton_task_management_clicked()
 {
     hide();
     task_management *taskk=new task_management(this);
-taskk->show();
+ taskk->show();
 }
 
 
